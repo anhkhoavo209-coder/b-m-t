@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Nền Hồng</title>
+    <style>
+        body {
+            background-color: #ffc0cb; /* Màu hồng nhạt */
+            color: #333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #e91e63; /* Màu hồng đậm */
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        a:hover {
+            background-color: #c2185b;
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            alert('chào cô bé dễ thương:> ');
+        };
+    </script>
+</head>
+<body>
+    <h1>em có yêu tôi ko?!</h1>
+    <a href="#">Không chọn và thoát là có đấy nhé:>></a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Tình Yêu 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffc0cb;
+            color: #333;
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #d81b60;
+        }
+
+        .button {
+            text-decoration: none;
+            color: white;
+            background-color: #e91e63;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 20px;
+            display: inline-block;
+            margin: 20px;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #c2185b;
+            transform: scale(1.1);
+        }
+
+        #thong-bao {
+            margin-top: 40px;
+            font-size: 24px;
+            color: #880e4f;
+        }
+    </style>
+
+    <script>
+        function chonCo() {
+            document.getElementById("thong-bao").innerHTML = "🎉 Chúc mừng, bạn đã lựa chọn chính xác! 💘";
+        }
+
+        function chonKhong() {
+            document.getElementById("thong-bao").innerHTML = "🚫 Lỗi rồi! Không được chọn cái này 😤";
+        }
+
+        window.onload = function () {
+            // Có thể giữ lại hoặc bỏ dòng này nếu không muốn pop-up
+            document.getElementById("thong-bao").innerHTML = "💖 Chào cô bé dễ thương :> 💖";
+        };
+    </script>
+</head>
+<body>
+    <h1>Em có yêu tôi không?! 💘</h1>
+    <button class="button" onclick="chonCo()">Có 💖</button>
+    <button class="button" onclick="chonKhong()">Không ❌</button>
+
+    <!-- Thông báo hiện ra tại đây -->
+    <div id="thong-bao"></div>
+</body>
+</html>
